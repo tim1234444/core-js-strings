@@ -472,7 +472,7 @@ function extractEmails(str) {
 function encodeToRot13(str) {
   return str
     .split('')
-    .map(function (char) {
+    .map(function convertToUpper(char) {
       if (/[a-zA-Z]/.test(char)) {
         const charCode = char.charCodeAt(0);
 
